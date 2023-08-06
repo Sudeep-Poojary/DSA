@@ -3,27 +3,34 @@
 import java.util.Scanner;
 
 public class Lecture10_5 {
+
     public static int getMax(int arr[], int n) {
-        int max = Integer.MIN_VALUE;
+        int maxi = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
+
+            maxi = Math.max(maxi, arr[i]);
+
+            // if (arr[i] > maxi) {
+            // maxi = arr[i];
+            // }
         }
-        return max;
+        return maxi;
 
     }
 
     public static int getMin(int arr[], int n) {
-        int min = Integer.MAX_VALUE;
+        int mini = Integer.MAX_VALUE;
 
         for (int i = 0; i < n; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
+
+            mini = Math.min(mini, arr[i]);
+
+            // if (arr[i] < mini) {
+            // mini = arr[i];
+            // }
         }
-        return min;
+        return mini;
     }
 
     public static void main(String[] args) {
