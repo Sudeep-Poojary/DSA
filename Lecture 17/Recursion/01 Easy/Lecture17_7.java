@@ -1,4 +1,4 @@
-// Print x^n (Stack height = logn) i.e., OPTIMIZED  
+// Print x^n (Stack height = logn) --> OPTIMIZED METHOD
 
 public class Lecture17_7 {
 
